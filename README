@@ -1,0 +1,27 @@
+Author: Patrick Cook
+Class: CSC 357 Systems Programming
+Date: June 7, 2016
+Project: Final Project Du - mydu
+
+TO RUN:
+Included is a Makefile that will compile the source code and 
+create an executable called "mydu". If you do not have a copy
+of the Makefile the follow command will create an executable:
+gcc du.c -o mydu
+
+USAGE:
+./mydu -a -b -k -m -h -0 -c -S -d#
+./mydu -abkmh0cSd#
+
+
+/* Current supported flags:
+ * -a write counts for all files
+ * -b uses bytes for size displayed
+ * -k uses kilobytes for size displayed
+ * -m uses megabytes for size displayed
+ * -h print sizes in human format (1K 234M 2G)
+ * -0 end each output line with a 0 bytes instead of newline
+ * -c produce a grand total size at end of program
+ * -S du will follow soft links
+ * -d depth of the search
+ */
